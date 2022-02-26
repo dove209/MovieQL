@@ -16,7 +16,6 @@ export const getMovies = (limit, rating) => {
 };
 
 export const getById = (id) => {
-  console.log(id);
   return fetch(`${API_URL_DETAIL}?movie_id=${id}`)
     .then((res) => res.json())
     .then((json) => json.data.movie);
